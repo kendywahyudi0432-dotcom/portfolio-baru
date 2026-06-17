@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-baru",
+  "version": "1.0.0",
+  "description": "Professional Portfolio - Kendi Wahyudi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/css/output.css",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Kendi Wahyudi",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.21.0",
+    "ejs": "^3.1.10",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/cli": "^4.0.0"
+  }
+}

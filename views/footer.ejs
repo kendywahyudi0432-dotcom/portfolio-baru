@@ -1,0 +1,78 @@
+<!-- Footer -->
+<footer class="footer-bg border-t py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <a href="/" class="text-lg font-bold text-primary">
+                    Kendi<span class="accent-text">.</span>
+                </a>
+                <p class="text-sm text-muted mt-1">Content Creator & Student</p>
+            </div>
+            <p class="text-sm text-muted">
+                &copy; <%= new Date().getFullYear() %> Kendi Wahyudi. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Theme toggle function - toggles 'dark'/'light' class on <html> element
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.contains('dark');
+    
+    if (isDark) {
+        html.classList.remove('dark');
+        html.classList.add('light');
+        localStorage.setItem('theme', 'light');
+    } else {
+        html.classList.remove('light');
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    
+    // Update theme icons
+    const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
+    document.querySelectorAll('[id^="themeIcon"]').forEach(el => {
+        el.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    });
+}
+
+// Mobile menu toggle
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    if (menu) {
+        menu.classList.toggle('hidden');
+    }
+}
+
+// On page load, restore saved theme
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    const html = document.documentElement;
+    
+    // Apply saved theme if it exists and differs from default
+    if (savedTheme === 'light') {
+        html.classList.remove('dark');
+        html.classList.add('light');
+    } else if (!savedTheme || savedTheme === 'dark') {
+        html.classList.remove('light');
+        html.classList.add('dark');
+    }
+    
+    // Update theme icons to match current
+    const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
+    document.querySelectorAll('[id^="themeIcon"]').forEach(el => {
+        el.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    });
+    
+    // Close mobile menu on link click
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.getElementById('mobileMenu')?.classList.add('hidden');
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<%- include('header', { title: title }) %>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section id="home" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+    <!-- Background Decorative Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-80 h-80 rounded-full opacity-10" style="background: radial-gradient(circle, #0066FF, transparent 70%);"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 rounded-full opacity-10" style="background: radial-gradient(circle, #0066FF, transparent 70%);"></div>
+        <div class="absolute top-1/3 left-1/4 w-2 h-2 rounded-full" style="background: #0066FF; box-shadow: 0 0 20px #0066FF, 100px 150px 0 1px #0066FF, -80px 200px 0 0.5px #0066FF, 200px -100px 0 1.5px #0066FF;"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <!-- Profile Photo with neon glow -->
+            <div class="flex-shrink-0 animate-fade-in">
+                <div class="relative">
+                    <div class="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden profile-img shadow-2xl neon-glow">
+                        <img src="/images/profile.jpg" alt="Kendi Wahyudi" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Decorative ring -->
+                    <div class="absolute -inset-4 rounded-full border-2 border-dashed opacity-20" style="border-color: #0066FF; animation: spin 20s linear infinite;"></div>
+                </div>
+            </div>
+
+            <!-- Hero Text -->
+            <div class="flex-1 text-center lg:text-left">
+                <p class="text-sm font-semibold tracking-widest uppercase mb-2" style="color: #0066FF; letter-spacing: 3px; text-shadow: 0 0 10px rgba(0,102,255,0.5);">
+                    Content Creator & Student
+                </p>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-primary">
+                    Hi, I'm <span style="color: #0066FF;" class="accent-glow-text">Kendi Wahyudi</span>
+                </h1>
+                <p class="text-lg sm:text-xl max-w-xl mb-8 text-muted">
+                    Mahasiswa Sistem Komputer Semester 4 di Universitas Pamulang (UNPAM). 
+                    Passionate content creator with a focus on daily life content.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <a href="#experience" class="btn-primary">
+                        View Experience
+                    </a>
+                    <a href="#contact" class="btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Social Links in Hero -->
+                <div class="flex gap-3 mt-8 justify-center lg:justify-start">
+                    <a href="https://wa.me/6285693481357" target="_blank" rel="noopener noreferrer" class="social-icon social-bg" title="WhatsApp">
+                        <svg class="w-5 h-5" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                    <a href="mailto:kendywahyudi0432@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon social-bg" title="Email">
+                        <svg class="w-5 h-5" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/kenn.whydd" target="_blank" rel="noopener noreferrer" class="social-icon social-bg" title="Instagram">
+                        <svg class="w-5 h-5" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@kenn.whydd" target="_blank" rel="noopener noreferrer" class="social-icon social-bg" title="TikTok">
+                        <svg class="w-5 h-5" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== EXPERIENCE SECTION ==================== -->
+<section id="experience" class="hero-bg py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="section-title text-primary">Experience</h2>
+            <p class="text-muted mt-6 max-w-2xl mx-auto">
+                Professional experience across various brands and organizations.
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <!-- Timeline -->
+            <div class="relative pl-8">
+                <!-- Timeline line -->
+                <div class="timeline-line"></div>
+
+                <!-- Experience 1 -->
+                <div class="glow-card card-base rounded-xl p-6 mb-8 relative">
+                    <div class="experience-dot"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-primary">Facetology</h3>
+                        <span class="text-sm font-medium px-3 py-1 rounded-full mt-1 sm:mt-0" style="background: rgba(0,102,255,0.15); color: #0066FF;">Current</span>
+                    </div>
+                    <p class="text-muted mb-2">Professional experience with Facetology brand.</p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Brand Collaboration</span>
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Content Creation</span>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="glow-card card-base rounded-xl p-6 mb-8 relative">
+                    <div class="experience-dot"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-primary">Scora</h3>
+                        <span class="text-sm font-medium px-3 py-1 rounded-full mt-1 sm:mt-0" style="background: rgba(0,102,255,0.15); color: #0066FF;">Current</span>
+                    </div>
+                    <p class="text-muted mb-2">Working with Scora on content and brand initiatives.</p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Brand Ambassador</span>
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Digital Content</span>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="glow-card card-base rounded-xl p-6 mb-8 relative">
+                    <div class="experience-dot"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-primary">Sarung Cendana Official</h3>
+                        <span class="text-sm font-medium px-3 py-1 rounded-full mt-1 sm:mt-0" style="background: rgba(0,102,255,0.15); color: #0066FF;">Current</span>
+                    </div>
+                    <p class="text-muted mb-2">Contributing to Sarung Cendana Official's brand presence.</p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Marketing</span>
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Brand Strategy</span>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="glow-card card-base rounded-xl p-6 relative">
+                    <div class="experience-dot"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-primary">PT Motasa Indonesia</h3>
+                        <span class="text-sm font-medium px-3 py-1 rounded-full mt-1 sm:mt-0" style="background: rgba(0,102,255,0.15); color: #0066FF;">Current</span>
+                    </div>
+                    <p class="text-muted mb-2">Professional collaboration with PT Motasa Indonesia.</p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Corporate Collaboration</span>
+                        <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Content Strategy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PORTFOLIO SECTION ==================== -->
+<section id="portfolio" class="section-alt-bg py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="section-title text-primary">Portfolio</h2>
+            <p class="text-muted mt-6 max-w-2xl mx-auto">
+                Showcasing my projects in programming and data analysis.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- C++ Project Card -->
+            <div class="glow-card card-base rounded-xl p-8 text-center flex flex-col items-center group">
+                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(0,102,255,0.1);">
+                    <svg class="w-8 h-8" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.293-1.34-.293-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.254.147.682.22 1.108.22.426 0 .855-.073 1.11-.22l7.773-4.486c.254-.147.588-.4.755-.69.167-.29.252-.616.252-.91V7.91c.002-.3-.086-.622-.252-.91zM12 19.11c-3.92 0-7.11-3.19-7.11-7.11S8.08 4.89 12 4.89a7.11 7.11 0 016.22 3.67l-3.11 1.8A3.56 3.56 0 0012 8.31c-1.97 0-3.56 1.6-3.56 3.56 0 1.96 1.59 3.56 3.56 3.56 1.2 0 2.27-.6 2.93-1.52l3.11 1.8A7.11 7.11 0 0112 19.11zm6.22-6.02h-.89v.89h-.89v-.89h-.89v-.89h.89v-.89h.89v.89h.89v.89z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Bank System (C++)</h3>
+                <p class="text-sm text-muted mb-4 flex-1">
+                    A simple banking system built with C++ that handles account creation, deposits, withdrawals, and balance inquiries via the terminal. Demonstrates OOP principles and file I/O operations.
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center mb-4">
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">OOP</span>
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">File I/O</span>
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Console App</span>
+                </div>
+                <a href="https://github.com/kennwhydd/bank-system-cpp" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-5">
+                    View on GitHub
+                </a>
+            </div>
+
+            <!-- Python Project Card -->
+            <div class="glow-card card-base rounded-xl p-8 text-center flex flex-col items-center group">
+                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(0,102,255,0.1);">
+                    <svg class="w-8 h-8" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M14.054 2.767C13.424 2.56 12.626 2.43 11.754 2.43c-3.378 0-4.038 1.583-4.038 3.375v2.497h7.205v1.014H5.284c-2.078 0-3.859 1.247-3.859 4.039 0 1.744 1.012 3.151 2.475 3.87 0 0-2.24.358-2.24 2.035v2.18c0 1.586 1.267 2.206 2.62 2.476 1.574.315 3.089.396 4.716.396 1.753 0 3.463-.288 4.672-.794 1.128-.472 2.065-1.291 2.065-2.48v-5.044H11.27v-1.014h9.479c1.515 0 2.47-.866 2.47-3.035 0-1.378-.155-3.16-1.715-4.513-1.282-1.112-3.282-1.651-5.261-1.651.589-.315 1.387-.659 1.387-1.576v-1.37c0-.858-.749-1.654-1.576-1.654m-4.497 1.457c.554 0 1.007.453 1.007 1.007 0 .553-.453 1.006-1.007 1.006-.554 0-1.007-.453-1.007-1.006 0-.554.453-1.007 1.007-1.007M3.23 13.657c.554 0 1.007.453 1.007 1.007 0 .554-.453 1.007-1.007 1.007-.554 0-1.007-.453-1.007-1.007 0-.554.453-1.007 1.007-1.007"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Data Scraper (Python)</h3>
+                <p class="text-sm text-muted mb-4 flex-1">
+                    A Python-based web scraper that collects and structures data from various sources. Features CSV export, data cleaning pipelines, and modular scraping architecture using BeautifulSoup & Requests.
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center mb-4">
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">BeautifulSoup</span>
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Data Cleaning</span>
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">CSV Export</span>
+                </div>
+                <a href="https://github.com/kennwhydd/data-scraper-python" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-5">
+                    View on GitHub
+                </a>
+            </div>
+
+            <!-- Excel / Data Analysis Card -->
+            <div class="glow-card card-base rounded-xl p-8 text-center flex flex-col items-center group">
+                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110" style="background: rgba(0,102,255,0.1);">
+                    <svg class="w-8 h-8" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M10.857 1.429H2.857A1.714 1.714 0 001.143 3.143v17.714a1.714 1.714 0 001.714 1.714h8V1.429zM12 1.429V8.57h7.143L12 1.429zm3.43 11.085l-1.371.857.971 1.629-1.543.857-.971-1.629-1.086 1.543-.857-.857L12 13.257l-1.629-.971.857-.857 1.086 1.543.971-1.629 1.543.857-.971 1.629 1.371.857zm0 0"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Sales Dashboard (Excel)</h3>
+                <p class="text-sm text-muted mb-4 flex-1">
+                    An interactive Excel dashboard for sales data analysis featuring pivot tables, dynamic charts, slicers, and automated KPI tracking. Demonstrates data visualization and business intelligence skills.
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center mb-4">
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Pivot Tables</span>
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">Data Viz</span>
+                    <span class="text-xs px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF;">KPI Tracking</span>
+                </div>
+                <span class="text-xs px-3 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF; cursor: default;">Contact for details</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section id="contact" class="hero-bg py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="section-title text-primary">Get In Touch</h2>
+            <p class="text-muted mt-6 max-w-2xl mx-auto">
+                Have a project or collaboration in mind? Let's connect!
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6285693481357" target="_blank" rel="noopener noreferrer" class="glow-card card-base rounded-xl p-6 flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,102,255,0.1);">
+                        <svg class="w-7 h-7" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-semibold text-primary">WhatsApp</h3>
+                        <p class="text-sm text-muted truncate">+62 856 9348 1357</p>
+                    </div>
+                    <svg class="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-all" style="color: #0066FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:kendywahyudi0432@gmail.com" target="_blank" rel="noopener noreferrer" class="glow-card card-base rounded-xl p-6 flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,102,255,0.1);">
+                        <svg class="w-7 h-7" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-semibold text-primary">Email</h3>
+                        <p class="text-sm text-muted truncate">kendywahyudi0432@gmail.com</p>
+                    </div>
+                    <svg class="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-all" style="color: #0066FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/kenn.whydd" target="_blank" rel="noopener noreferrer" class="glow-card card-base rounded-xl p-6 flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,102,255,0.1);">
+                        <svg class="w-7 h-7" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-semibold text-primary">Instagram</h3>
+                        <p class="text-sm text-muted truncate">@kenn.whydd</p>
+                    </div>
+                    <svg class="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-all" style="color: #0066FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@kenn.whydd" target="_blank" rel="noopener noreferrer" class="glow-card card-base rounded-xl p-6 flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,102,255,0.1);">
+                        <svg class="w-7 h-7" style="color: #0066FF;" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-semibold text-primary">TikTok</h3>
+                        <p class="text-sm text-muted truncate">@kenn.whydd</p>
+                    </div>
+                    <svg class="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-all" style="color: #0066FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('footer') %>
